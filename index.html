@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Hoàng Ân's Invert</title>
+		<script src = 'js/Anscript.js'></script>
+		<style>
+			body {
+				text-align: center;
+			}
+			
+			#copy {
+				color: #00f;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<form action = "">
+			<fieldset>
+				<legend>Chọn hình ảnh:</legend>
+				<input id="file" size="40" onchange="fileSelected();" type="file" accept="image/*">
+				<input onclick="invertColor();" value="Nghịch đảo màu" type="button"><br><br>
+				<div id="source"></div>
+				<canvas id="invert" width="0" height="0">Trình duyệt không hỗ trợ</canvas>
+			</fieldset>
+		</form>
+		
+		<p id = 'copy'><strong>Copyright &copy; 2012 Hoàng Ân</strong></p>
+	</body>
+</html>
