@@ -8,15 +8,15 @@
 			body {
 				text-align: center;
 			}
-			
+
 			#copy {
 				color: #00f;
 			}
 		</style>
 	</head>
-	
+
 	<body>
-		<form action = "">
+		<form action="">
 			<fieldset>
 				<legend>Chọn hình ảnh:</legend>
 				<input id="file" size="40" onchange="fileSelected();" type="file" accept="image/*">
@@ -25,7 +25,7 @@
 				<canvas id="invert" width="0" height="0">Trình duyệt không hỗ trợ</canvas>
 			</fieldset>
 		</form>
-		
-		<p id = 'copy'><strong>Copyright &copy; 2012 Hoàng Ân</strong></p>
+
+		<p id="copy"><strong>Copyright &copy; 2012<script>new Date().getFullYear() > 2012 && document.write("-" + new Date().getFullYear());</script>, Hoàng Ân</strong></p>
 	</body>
 </html>
